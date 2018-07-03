@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vox Pupuli - The Funny Community Journey - Tim Meusel</title>
+    <title>Vox Pupuli - Die Community hinter Puppet - Tim Meusel</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -99,6 +99,9 @@
         z-index: 0;
       }
       /* Two-column layout */
+      .puppetlogo img {
+        width: 95%;
+      }
       .left-column {
         color: #777;
         width: 20%;
@@ -150,9 +153,8 @@
 
 class: center, middle, inverse
 
-# Vox Pupuli - The Funny Community Journey
-## ~~Fourth Edition?~~
-## Fifth Edition!
+# Vox Pupuli
+## Die Community hinter Puppet
 
 ---
 
@@ -172,6 +174,108 @@ background-size: cover
 * Vox Pupuli PMC member
 
 * Organizing BBQ events for Arch Linux Community
+
+???
+
+* Wer kennt Puppet?
+
+---
+
+class: center, middle, inverse
+
+# Storytime
+
+???
+
+Bevor wir anfangen möchte ich euch eine geschichte erzählen
+
+---
+
+background-image: url(bastelfreak.jpg)
+background-size: cover
+
+???
+
+* sysadmin vor langer zeit
+* symbolfoto
+
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.puppetlogo[
+![image](Puppet-Logo-Amber-Black-lg.png)
+]
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.left-column[
+## Puppet DSL
+]
+
+.right-column[
+```puppet
+package{'htop':
+  ensure => 'present',
+}
+```
+]
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.left-column[
+## Puppet
+]
+
+.right-column[
+```puppet
+package{'htop':
+  ensure => 'present',
+}
+```
+
+```puppet
+elasticsearch::instance { 'testinstance':
+  jvm_options   => $jvm_options,
+  config        => $config,
+  init_defaults => {
+    'ES_PATH_CONF' => '/etc/elasticsearch/testinstance',
+  },
+}
+```
+]
+
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.puppetlogo[
+![image](puppetforge.png)
+]
+
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.puppetlogo[
+![image](nginx.png)
+]
+
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.puppetlogo[
+![image](puppetconf.jpg)
+]
 
 ---
 
@@ -276,7 +380,7 @@ background-size: cover
 
 * Be helpful and polite to each other
 
-* Be open-minded to (new) people and (new) technology
+* Be open-minded to people and technology
 
 ]
 
